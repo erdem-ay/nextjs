@@ -12,7 +12,7 @@ const HomeContainer = ({ selectedCategory, movies }) => {
   return (
     <div>
       <FeaturedMovie movie={Movies.results[0]} />
-      <Categories categories={Genres.genres.slice(0, 5)} />
+      <Categories categories={Genres.genres.slice(0, 11)} />
       <MoviesSection title={selectedCategory?.name} movies={movies} />
       <MoviesSection title='Your Favorites' movies={Movies.results.slice(1, 7)} /> 
       <MoviesSection title='Popular Movies' movies={Movies.results.slice(7, 13)} /> 
